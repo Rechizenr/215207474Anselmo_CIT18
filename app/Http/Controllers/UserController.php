@@ -32,19 +32,18 @@ class UserController extends Controller
 }
     
 
-    public function showLoginForm()
-    {
-        return view('auth.login');
-    }
+public function showLoginForm()
+{
+    return view('auth.login'); // Ensure this matches the correct file path
+}
 
-    public function login(Request $request)
+public function login(Request $request)
 {
     $request->validate([
         'email' => 'required|email',
         'password' => 'required',
     ]);
 
-    // Ensure credentials are correct
     $credentials = $request->only('email', 'password');
 
     if (Auth::attempt($credentials)) {

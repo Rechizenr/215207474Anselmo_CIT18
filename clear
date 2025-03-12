@@ -1,0 +1,13 @@
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to master
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{1}: checkout: moving from main to main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: checkout: moving from main to main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{3}: checkout: moving from main to main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{4}: Branch: renamed refs/heads/main to refs/heads/main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{6}: Branch: renamed refs/heads/main to refs/heads/main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{8}: checkout: moving from 7f960feeeff386e08d0539eefab666e9ff369e08 to main
+[33m7f960fe[m HEAD@{9}: commit: m
+[33m3dc2508[m[33m ([m[1;32mtmp[m[33m)[m HEAD@{10}: pull --rebase origin main (start): checkout 3dc25087029f4831f33b05020b6039a2c36763e2
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{11}: Branch: renamed refs/heads/main to refs/heads/main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{13}: Branch: renamed refs/heads/main to refs/heads/main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{15}: checkout: moving from master to main
+[33m5cff6d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{16}: commit (initial): Login and Register Done
