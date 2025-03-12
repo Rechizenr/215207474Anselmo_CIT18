@@ -19,3 +19,9 @@ Route::post('/register', [UserController::class, 'register'])->name('register');
 // User Login Routes
 Route::get('/login', [UserController::class, 'showLoginForm'])->name('login.form');
 Route::post('/login', [UserController::class, 'login'])->name('login');
+
+Route::get('/logout', function () {
+    return view('logout');
+})->middleware('auth')->name('logout.view');
+
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');
