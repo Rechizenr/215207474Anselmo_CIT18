@@ -11,6 +11,7 @@ Route::get('/', function () {
 
 // Notes CRUD routes
 Route::resource('notes', NoteController::class);
+Route::get('/notes', [NoteController::class, 'index'])->name('notes');
 
 // User Registration Routes
 Route::get('/register', [UserController::class, 'showRegistrationForm'])->name('register.form');
