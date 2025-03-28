@@ -4,64 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            flex-direction: column;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 400px;
-            margin: 20px;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        p {
-            margin-top: 15px;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <h2>Login</h2>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Login</h2>
+
         @if(session('error'))
-            <p style="color: red;">{{ session('error') }}</p>
+            <p class="text-red-500 text-sm text-center mb-4">{{ session('error') }}</p>
         @endif
-        <form method="POST" action="{{ route('login') }}">
+
+        <form method="POST" action="{{ route('login') }}" class="space-y-4">
             @csrf
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Email" 
+                required
+                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            >
+            <input 
+                type="password" 
+                name="password" 
+                placeholder="Password" 
+                required
+                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            >
+            <button 
+                type="submit" 
+                class="w-full bg-blue-500 text-white py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+                Login
+            </button>
         </form>
-        <p>Don't have an account? <a href="{{ route('register.form') }}">Register here</a></p>
+
+        <p class="mt-4 text-center text-gray-600">
+            Don't have an account? 
+            <a href="{{ route('register.form') }}" class="text-blue-500 hover:underline">Register here</a>
+        </p>
     </div>
+
 </body>
 </html>
