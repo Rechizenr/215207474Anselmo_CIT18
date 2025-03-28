@@ -36,15 +36,16 @@
     Dashboard
 </a>
 <a href="{{ route('notes.index') }}"
-   class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 
-          focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+   class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md transition 
+          hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
     Notes
 </a>
+
 
 <form action="{{ route('logout') }}" method="POST" class="inline">
     @csrf
     <button type="submit"
-        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+        class="px-4 py-2 bg-red-500 text-white font-semibold rounded-md shadow-md transition hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
         Log out
     </button>
 </form>
