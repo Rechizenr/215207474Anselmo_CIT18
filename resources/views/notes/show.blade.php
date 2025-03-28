@@ -19,7 +19,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
                 <div class="form-group">
-                    <strong>contents:</strong> <br/>
+                    <strong>Contents:</strong> <br/>
                     {{ $note->content }}
                 </div>
             </div>

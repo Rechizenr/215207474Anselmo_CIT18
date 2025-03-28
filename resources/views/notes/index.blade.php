@@ -19,7 +19,7 @@
                 <tr>
                     <th width="80px">No</th>
                     <th>Title</th>
-                    <th>content</th>
+                    <th>Content</th>
                     <th width="250px">Action</th>
                 </tr>
             </thead>

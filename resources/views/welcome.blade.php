@@ -32,38 +32,43 @@
                             <nav class="-mx-3 flex flex-1 justify-end">
                                 @auth
                                 <a href="{{ url('/dashboard') }}"
-    class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+    class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 
+    focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 
+    dark:focus-visible:ring-white mr-4">
     Dashboard
 </a>
+
 <a href="{{ route('notes.index') }}"
    class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md transition 
-          hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 mr-4">
     Notes
 </a>
-
 
 <form action="{{ route('logout') }}" method="POST" class="inline">
     @csrf
     <button type="submit"
-        class="px-4 py-2 bg-red-500 text-white font-semibold rounded-md shadow-md transition hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
+        class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md transition 
+          hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
         Log out
     </button>
 </form>
                                 @else
-                                    <a
-                                        href="{{ route('login') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Log in
-                                    </a>
+                                <a
+        href="{{ route('login') }}"
+        class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md transition 
+        hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 mr-4"
+    >
+        Log in
+    </a>
 
-                                    @if (Route::has('register'))
-                                        <a
-                                            href="{{ route('register') }}"
-                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Register
-                                        </a>
+    @if (Route::has('register'))
+        <a
+            href="{{ route('register') }}"
+            class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md transition 
+            hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+            Register
+        </a>
                                     @endif
                                 @endauth
                             </nav>
